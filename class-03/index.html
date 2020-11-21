@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    
+    <div class="menu-area">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a>
+                <ul class="menu-one">
+                    <li><a href="#">Service 01</a></li>
+                    <li><a href="#">Service 02</a></li>
+                    <li><a href="#">Service 03</a>
+                        <ul class="menu-two">
+                            <li><a href="#">Service 01</a></li>
+                            <li><a href="#">Service 02</a></li>
+                            <li><a href="#">Service 03</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="banner-area">
+        <h1>Welcome to Saffron</h1>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.ripples-min.js"></script>
+    <script>
+        $('.banner-area').ripples({
+            dropRadius: 20,
+            perturbance: 0.03
+        });
+    </script>
+</body>
+</html>
