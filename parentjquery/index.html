@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>jQuery Anchester Method</h1>
+    <div id="main-outer" style="position: relative;">
+        <h2>Main Outer</h2>
+        <div id="outer">
+            <h2>Outer</h2>
+            <ul id="inner">
+                <h2 id="child-head">Inner</h2>
+                <div>A</div>
+                <div>B</div>
+                <div id="child-c">C</div>
+                <div>D</div>
+            </ul>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+           $('#child-c').parent().css('background','gray');
+          $('#inner').parent().css('background','green');
+           $('#inner').parentsUntil('#main-outer').css('background','blue');
+           $('#child-c').offsetParent().css('background','red');
+           $('#child-c').closest('#main-outer').css('background','pink');
+        });
+    </script>
+</body>
+</html>
