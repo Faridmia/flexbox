@@ -1,0 +1,52 @@
+body{
+    background-color: #f1f1f1;
+    font-family: Poppins;
+}
+.container{
+    border:4px solid black;
+    /* display: flex; */
+    display: inline-flex;
+}
+
+.flex-item{
+    color: #fff;
+    padding: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+.item-1{
+    background: chartreuse;
+}
+.item-2{
+    background:gray;
+}
+
+.item-3{
+    background: indianred;
+}
+
+.item-4{
+    background: khaki;
+}
+
+.item-5{
+    background: lightblue;
+}
+
+.item-6{
+    background: black;
+}
+
+.item-7{
+    background: darkgoldenrod;
+}
+
+.item-8{
+    background: lightgreen;
+}
+
+.item-9{
+    background: rgb(179, 189, 179);
+}
